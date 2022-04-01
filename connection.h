@@ -9,7 +9,7 @@
 
 typedef void (*callback_function)(struct epoll* epoll, int fd);
 
-typedef enum { kInitial, kClosed } connection_state;
+typedef enum { kOpen, kClosed } connection_state;
 
 struct connection {
   char* read_buffer;

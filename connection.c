@@ -33,7 +33,7 @@ struct connection* make_connection(int fd) {
 
   connection->callback = NULL;
 
-  connection->state = kInitial;
+  connection->state = kOpen;
   connection->number = connection_number++;
 
   return connection;
